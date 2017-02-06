@@ -1,0 +1,15 @@
+{
+  "name": "nested",
+  "version": "0.1.0",
+  "description": "Update nested entities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nested",
+    "update"
+  ],
+  "author": "Oleksandr Bondarchuk <alex.coockoo@gmail.com> (https://github.com/coockoo)",
+  "license": "MIT"
+}
