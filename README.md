@@ -61,7 +61,7 @@ let items = [
 	{ id: 4, ref_id: 1, name: 'PogChamp' },
 	{ id: 5, ref_id: 2, name: 'KKona' }
 ];
-let maxId = 4;
+let maxId = 5;
 
 const createOrUpdate = nested({
 	foreignKey: 'ref_id',
