@@ -59,7 +59,7 @@ let items = [
 	{ id: 2, ref_id: 1, name: 'KappaPride' },
 	{ id: 3, ref_id: 1, name: 'Jebaited' },
 	{ id: 4, ref_id: 1, name: 'PogChamp' },
-	{ id: 5: ref_id: 2, name: 'KKona' }
+	{ id: 5, ref_id: 2, name: 'KKona' }
 ];
 let maxId = 4;
 
