@@ -2,6 +2,10 @@
 
 Update nested entities
 
+## Installation
+
+`npm install --save nstd`
+
 ## Builder options
 
 |    option        | type     | default value  |
