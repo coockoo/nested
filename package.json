@@ -11,5 +11,9 @@
     "update"
   ],
   "author": "Oleksandr Bondarchuk <alex.coockoo@gmail.com> (https://github.com/coockoo)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "lodash": "^4.17.4"
+  }
 }
