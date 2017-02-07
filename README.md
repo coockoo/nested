@@ -82,3 +82,7 @@ createOrUpdate(1, [
 });
 
 ```
+
+## Debug
+
+`DEBUG=nested node <path/to/your/app.js>`
