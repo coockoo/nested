@@ -1,4 +1,4 @@
-# nested
+# nstd
 
 Update nested entities
 
@@ -44,7 +44,7 @@ methods: {
 
 
 ## Call options
-`const createOrUpdate = nested({ ... });`
+`const createOrUpdate = nstd({ ... });`
 
 `createOrUpdate(foreignKeyValue:<String|Number>, items:<Array>, params:<any>)`
 
@@ -52,7 +52,7 @@ methods: {
 
 ```javascript
 const _ = require('lodash');
-const nested = require('nested');
+const nstd = require('nstd');
 
 let items = [
 	{ id: 1, ref_id: 1, name: 'Kappa' },
@@ -63,7 +63,7 @@ let items = [
 ];
 let maxId = 5;
 
-const createOrUpdate = nested({
+const createOrUpdate = nstd({
 	foreignKey: 'ref_id',
 	methods: {
 		query: (refId) => _.filter(items, { ref_id: refId }),
@@ -98,4 +98,4 @@ createOrUpdate(1, [
 
 ## Debug
 
-`DEBUG=nested node <path/to/your/app.js>`
+`DEBUG=nstd node <path/to/your/app.js>`

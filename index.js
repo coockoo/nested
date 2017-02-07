@@ -1,10 +1,10 @@
 const Promise = require('bluebird');
 const _ = require('lodash');
-const debug = require('debug')('nested');
+const debug = require('debug')('nstd');
 
-module.exports = nested;
+module.exports = nstd;
 
-function nested (options) {
+function nstd (options) {
 
 	const primaryKey = _.get(options, 'primaryKey', 'id');
 	const foreignKey = _.get(options, 'foreignKey');

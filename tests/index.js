@@ -1,15 +1,16 @@
 const _ = require('lodash');
-const nested = require('../');
+const nstd = require('../');
 
 let items = [
 	{ id: 1, ref_id: 1, name: 'Kappa' },
 	{ id: 2, ref_id: 1, name: 'KappaPride' },
 	{ id: 3, ref_id: 1, name: 'Jebaited' },
-	{ id: 4, ref_id: 1, name: 'PogChamp' }
+	{ id: 4, ref_id: 1, name: 'PogChamp' },
+	{ id: 5, ref_id: 2, name: 'KKona' }
 ];
-let maxId = 4;
+let maxId = 5;
 
-const createOrUpdate = nested({
+const createOrUpdate = nstd({
 	foreignKey: 'ref_id',
 	methods: {
 		query: (refId) => _.filter(items, { ref_id: refId }),

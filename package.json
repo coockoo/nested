@@ -1,5 +1,5 @@
 {
-  "name": "nested",
+  "name": "nstd",
   "version": "0.1.0",
   "description": "Update nested entities",
   "main": "index.js",
@@ -11,6 +11,10 @@
     "update"
   ],
   "author": "Oleksandr Bondarchuk <alex.coockoo@gmail.com> (https://github.com/coockoo)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coockoo/nstd.git"
+  },
   "license": "MIT",
   "dependencies": {
     "bluebird": "^3.4.7",
