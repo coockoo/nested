@@ -27,9 +27,6 @@ function nested (options) {
 				const updateKeys = _.intersection(existingKeys, newKeys);
 				const removeKeys = _.difference(existingKeys, newKeys);
 
-				debug('update keys', updateKeys);
-				debug('remove keys', removeKeys);
-
 				const createItems = items
 					.filter((item) => !getItemPrimaryKey(item))
 					.map((item) => setItemForeignKey(item, key));
