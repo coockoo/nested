@@ -21,11 +21,11 @@ function nested (options) {
 
 				const existingKeys = existingItems
 					.map(getItemPrimaryKey);
-				const newKeys = items
+				const itemsKeys = items
 					.map(getItemPrimaryKey)
 					.filter(Boolean);
-				const updateKeys = _.intersection(existingKeys, newKeys);
-				const removeKeys = _.difference(existingKeys, newKeys);
+				const updateKeys = _.intersection(existingKeys, itemsKeys);
+				const removeKeys = _.difference(existingKeys, itemsKeys);
 
 				const createItems = items
 					.filter((item) => !getItemPrimaryKey(item))
