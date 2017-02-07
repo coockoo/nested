@@ -1,5 +1,6 @@
 const Promise = require('bluebird');
 const _ = require('lodash');
+const debug = require('debug')('nested');
 
 module.exports = nested;
 
@@ -26,8 +27,8 @@ function nested (options) {
 				const updateKeys = _.intersection(existingKeys, newKeys);
 				const removeKeys = _.difference(existingKeys, newKeys);
 
-				console.log('update keys', updateKeys);
-				console.log('remove keys', removeKeys);
+				debug('update keys', updateKeys);
+				debug('remove keys', removeKeys);
 
 				const createItems = items
 					.filter((item) => !getItemPrimaryKey(item))
@@ -37,9 +38,9 @@ function nested (options) {
 				const removeItems = existingItems
 					.filter((item) => _.includes(removeKeys, getItemPrimaryKey(item)));
 
-				console.log('Create items: ', createItems);
-				console.log('Update items: ', updateItems);
-				console.log('Remove items: ', removeItems);
+				debug('Create items: ', createItems);
+				debug('Update items: ', updateItems);
+				debug('Remove items: ', removeItems);
 
 				return Promise.all([
 					Promise.map(removeItems, (item) => remove(item, params)),
