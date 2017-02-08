@@ -15,9 +15,11 @@ function nstd (options) {
 
 	return handler;
 
-	function handler (key, items, params) {
+	function handler (key, inputItems, params) {
 		return Promise.resolve(query(key, params))
-			.then((existingItems) => {
+			.then((queriedItems) => {
+				const items = inputItems || [];
+				const existingItems = queriedItems || [];
 
 				const existingKeys = existingItems
 					.map(getItemPrimaryKey);
