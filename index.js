@@ -30,7 +30,7 @@ function nstd (options) {
 				const removeKeys = _.difference(existingKeys, itemsKeys);
 
 				const createItems = items
-					.filter((item) => !getItemPrimaryKey(item))
+					.filter((item) => !_.includes(existingKeys, getItemPrimaryKey(item)))
 					.map((item) => setItemForeignKey(item, key));
 				const updateItems = items
 					.filter((item) => _.includes(updateKeys, getItemPrimaryKey(item)));

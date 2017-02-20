@@ -25,7 +25,8 @@ const a = [
 	{ id: 1, ref_id: 1, name: 'Kappa' },
 	{ id: 2, ref_id: 1, name: 'KappaPride' },
 	{ id: 3, ref_id: 1, name: 'Jebaited' },
-	{ name: 'NotLikeThis' }
+	{ name: 'NotLikeThis' },
+	{ id: 'trash-id', name: 'OSfrog' }
 ];
 //const a = undefined;
 createOrUpdate(1, a).then(function (res) {
